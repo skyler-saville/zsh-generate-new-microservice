@@ -1,4 +1,6 @@
-# New Microservice Project Script
+# zsh-generate-new-microservice
+
+## New Microservice Project Script
 
 This script automates the process of generating a new microservice project structure. It helps you quickly set up the directory layout and essential files for your microservices-based project.
 
@@ -61,6 +63,32 @@ This script automates the process of generating a new microservice project struc
 │   └── version.txt
 ```
 
+## Setting Up in $HOME/scripts (Optional)
+
+To make it more convenient to run the `generate_project_structure.sh` script from anywhere on your system, you can consider placing the entire project in the `$HOME/scripts` directory and creating an alias.
+
+1. Move the project to the `$HOME/scripts` directory:
+
+    ```bash
+    mv path/to/repo-directory $HOME/scripts
+    ```
+
+2. Create an alias in your shell configuration file (e.g., `~/.zshrc` for zsh):
+
+    ```bash
+    echo 'alias new-microservice="$HOME/scripts/<repo directory name>/bin/generate_project_structure.sh"' >> ~/.zshrc
+    ```
+
+    Replace `your-repo` with the actual name of the cloned repository.
+
+3. Restart your terminal or run `source ~/.zshrc` to apply the changes.
+
+Now, you can use the `new-microservice` alias to run the script from any location:
+
+```bash
+new-microservice
+```
+
 ### Notes
 
 - The script allows you to create a main project with multiple microservices, each with its own directory structure.
@@ -74,4 +102,3 @@ This script automates the process of generating a new microservice project struc
 This script is licensed under the MIT License - see the LICENSE.md file for details.
 
 > __You can customize this README template further based on additional details you want to provide or specific instructions for your users.__
-# zsh-generate-new-microservice
