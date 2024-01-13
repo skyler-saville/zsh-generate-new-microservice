@@ -1,0 +1,17 @@
+# Dockerfile for Microservice
+FROM python:3.8-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy source code to working directory
+COPY src/ /app/src
+
+# Install dependencies
+RUN pip install --no-cache-dir -r /app/src/requirements.txt
+
+# Expose port
+EXPOSE 8000
+
+# Command to run the application
+CMD ["python", "/app/src/main.py"]

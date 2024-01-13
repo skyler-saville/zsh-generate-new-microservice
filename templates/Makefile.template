@@ -1,0 +1,34 @@
+# Makefile for Microservice
+
+# Variables
+PROJECT_NAME := microservice
+PYTHON := python
+PIP := pip
+
+# Targets
+.PHONY: install run test lint format clean
+
+install:
+	@echo "Installing dependencies..."
+	$(PIP) install -r src/requirements.txt
+
+run:
+	@echo "Running the application..."
+	$(PYTHON) src/main.py
+
+test:
+	@echo "Running tests..."
+	# Add your test command here
+
+lint:
+	@echo "Linting code..."
+	flake8 src
+
+format:
+	@echo "Formatting code..."
+	black src
+	isort src
+
+clean:
+	@echo "Cleaning up..."
+	# Add any cleanup commands here

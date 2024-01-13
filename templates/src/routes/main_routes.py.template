@@ -1,0 +1,6 @@
+from fastapi import APIRouter
+from . import main_controller
+
+router = APIRouter()
+
+router.include_router(main_controller.router, prefix="/hello", tags=["hello"])

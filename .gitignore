@@ -1,0 +1,17 @@
+# .gitignore
+
+# Ignore compiled Python files
+*.pyc
+__pycache__
+
+# Ignore virtual environment
+venv/
+
+# Ignore local settings or environment files
+*.env
+*.env.*
+
+# Ignore any local configuration or temporary files
+/.vscode
+/.idea
+*.DS_Store

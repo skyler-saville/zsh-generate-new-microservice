@@ -1,0 +1,10 @@
+# common_utils.py.template
+
+def common_function():
+    """
+    A common utility function used across microservices.
+    """
+    # Add your common functionality here
+    pass
+
+# Additional common utility functions can be added as needed

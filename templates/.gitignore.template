@@ -1,0 +1,11 @@
+# .gitignore for Microservice
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+
+# Dependencies
+venv/

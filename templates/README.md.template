@@ -1,0 +1,22 @@
+# Microservice
+
+This is a microservice for [project-name].
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Pip
+
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+```bash
+python main.py
+```
